@@ -1,0 +1,29 @@
+@import "_mixins.scss"; // Include the CSS mixins
+@import "_variables.scss"; // Include all variables for the site like fonts
+
+.headline {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	@include transform(translate(-50%, -50%));
+
+	span {
+		font-size: 8em;
+		font-weight: bold;
+	}
+
+	.real-text {
+		color: #fff;
+		position: relative;
+		z-index: 1;
+	}
+
+	.shadow {
+		color: $tertiary;
+		left: 2%;
+		position: absolute;
+		top: 30%;
+		
+	}
+}

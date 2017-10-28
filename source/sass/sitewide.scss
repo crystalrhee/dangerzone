@@ -1,0 +1,11 @@
+@import "_variables.scss"; // Include all variables for the site like fonts
+@import "_mixins.scss"; // Include the CSS mixins
+@import "_reset.scss"; // Include the general HTML reset
+@import "_components.scss";
+
+body {
+	header {
+		height: 100vh;
+		@include gradient(180deg, $quaternary 0%, #FFFFFF 100%)
+	}
+}
